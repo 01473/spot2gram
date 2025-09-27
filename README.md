@@ -4,10 +4,7 @@ Sync your currently playing Spotify track to Telegram music status. Uses a Teleg
 
 > 🇷🇺 README на Русском доступно [здесь](README-RU.md)
 
-Script uses [@playinnowbot](https://t.me/playinnowbot) Telegram bot to get music from it:
-- Start bot and link spotify account in it
-- Create new telegram channel that will contain tracks
-- Get ID of telegram channel and fill it in .env (usually ID should start with -100, if ID doesn't - add -100 yourself)
+Thanks to [@playinnowbot](https://t.me/playinnowbot) Telegram bot for the opportunity to get music from it
 
 ![demo image](.github/images/demo.png)
 ![demo image 2](.github/images/demo2.png)
@@ -20,9 +17,22 @@ Script uses [@playinnowbot](https://t.me/playinnowbot) Telegram bot to get music
 ## Requirements
 - [Python](https://www.python.org/downloads/) 3.10+
 
+## Create a Spotify App
+1. Open the Spotify Developer Dashboard (`https://developer.spotify.com/dashboard`)
+2. Create an app
+3. In app settings add the Redirect URI: `http://127.0.0.1:8888/callback`
+4. Save changes
+5. Copy your `Client ID` and `Client Secret` and fill them in .env
+
+## Telegram Setup
+1. Start [@playinnowbot](https://t.me/playinnowbot) Telegram bot
+2. Link Spotify account in the bot
+3. Create new Telegram Channel that will contain tracks
+4. Get ID of telegram channel and fill it in .env (usually ID should start with -100, if ID doesn't - add -100 yourself)
+
 ## Quick Start
 
-Clone and enter the project:
+### Clone and enter the project
 ```bash
 git clone https://github.com/vedma1337/spot2gram.git
 cd spot2gram
@@ -62,13 +72,6 @@ python spotify_auth.py
 python main.py
 ```
 
-## Create a Spotify App
-1. Open the Spotify Developer Dashboard (`https://developer.spotify.com/dashboard`)
-2. Create an app
-3. In app settings add the Redirect URI: `http://127.0.0.1:8888/callback`
-4. Save changes
-5. Copy your `Client ID` and `Client Secret` and fill them in .env
-
 ## Configure .env
 Copy `.env-example` to `.env` and fill the values:
 ```ini
@@ -84,7 +87,7 @@ POLL_INTERVAL_SECONDS=5
 - `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`: from your Spotify app
 - `SPOTIFY_REFRESH_TOKEN`: obtained via `spotify_auth.py`
 - `SPOTIFY_REDIRECT_URI`: default `http://127.0.0.1:8888/callback`
-- `CHANNEL_ID`: numeric chat/channel ID to post the inline result (can be your Saved Messages or a private channel)
+- `CHANNEL_ID`: numeric chat/channel ID to post the inline result (can be your Saved Messages or a private channel, better private channel)
 - `POLL_INTERVAL_SECONDS`: Spotify polling interval in seconds
 
 > [!NOTE]

@@ -4,10 +4,7 @@
 
 > 🇪🇳 README in english available [here](README.md)
 
-Скрипт использует бота [@playinnowbot](https://t.me/playinnowbot) для получения музыки. Обязательно:
-- Запустите бота и привяжите аккаунт Spotify внутри бота
-- Создайте новый Telegram-канал в котором будут треки
-- Получите ID канала и укажите его в `.env` (обычно начинается с `-100`. Если ID без `-100`, добавьте `-100` в начало сами)
+Спасибо Telegram боту [@playinnowbot](https://t.me/playinnowbot) за возможность скачивать треки.
 
 ![demo image](.github/images/demo.png)
 ![demo image 2](.github/images/demo2.png)
@@ -19,6 +16,19 @@
 
 ## Требования
 - [Python](https://www.python.org/downloads/) 3.10+
+
+## Создание приложения в Spotify
+1. Откройте Spotify Developer Dashboard (`https://developer.spotify.com/dashboard`)
+2. Создайте приложение
+3. В настройках приложения добавьте Redirect URI: `http://127.0.0.1:8888/callback`
+4. Сохраните изменения
+5. Скопируйте `Client ID` и `Client Secret` и укажите их в `.env`
+
+## Настройка Telegram
+1. Запустите Telegram-бота [@playinnowbot](https://t.me/playinnowbot)
+2. Привяжите аккаунт Spotify в боте
+3. Создайте новый Telegram-канал, в котором будут треки
+4. Получите ID канала и укажите его в `.env` (обычно ID начинается с `-100`. Если у вас без `-100`, добавьте префикс `-100` сами)
 
 ## Быстрый старт
 
@@ -62,13 +72,6 @@ python spotify_auth.py
 python main.py
 ```
 
-## Создание приложения в Spotify
-1. Откройте Spotify Developer Dashboard (`https://developer.spotify.com/dashboard`)
-2. Создайте приложение
-3. В настройках приложения добавьте Redirect URI: `http://127.0.0.1:8888/callback`
-4. Сохраните изменения
-5. Скопируйте `Client ID` и `Client Secret` и укажите их в `.env`
-
 ## Настройка .env
 Скопируйте `.env-example` в `.env` и заполните значения:
 ```ini
@@ -84,7 +87,7 @@ POLL_INTERVAL_SECONDS=5
 - `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`: из вашего приложения Spotify
 - `SPOTIFY_REFRESH_TOKEN`: получаем через `spotify_auth.py`
 - `SPOTIFY_REDIRECT_URI`: по умолчанию `http://127.0.0.1:8888/callback`
-- `CHANNEL_ID`: числовой ID чата/канала, куда отправится inline-результат (можно Saved Messages или приватный канал)
+- `CHANNEL_ID`: числовой ID чата/канала, куда отправится inline-результат (можно избранные или приватный канал, лучше отдельный и приватный канал)
 - `POLL_INTERVAL_SECONDS`: частота опроса Spotify в секундах
 
 > [!NOTE]
