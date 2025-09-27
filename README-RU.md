@@ -2,7 +2,7 @@
 
 Синхронизирует текущий трек из Spotify в музыкальный статус Telegram. Использует Telegram-бота для получения трека и Spotify Web API.
 
-🇪🇳 README in english available [here](README.md)
+> 🇪🇳 README in english available [here](README.md)
 
 Скрипт использует бота [@playinnowbot](https://t.me/playinnowbot) для получения музыки. Обязательно:
 - Запустите бота и привяжите аккаунт Spotify внутри бота

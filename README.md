@@ -2,7 +2,7 @@
 
 Sync your currently playing Spotify track to Telegram music status. Uses a Telegram Bot to download track and the Spotify Web API.
 
-🇷🇺 README на Русском доступно [здесь](README-RU.md)
+> 🇷🇺 README на Русском доступно [здесь](README-RU.md)
 
 Script uses [@playinnowbot](https://t.me/playinnowbot) Telegram bot to get music from it:
 - Start bot and link spotify account in it
