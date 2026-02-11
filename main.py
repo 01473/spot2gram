@@ -16,7 +16,7 @@ load_dotenv()
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", "")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", "")
 SPOTIFY_REFRESH_TOKEN = os.getenv("SPOTIFY_REFRESH_TOKEN", "")
-TARGET_CHANNEL_ID = os.getenv("CHANNEL_ID", "")
+TARGET_CHANNEL_ID = int(os.getenv("CHANNEL_ID", ""))
 POLL_INTERVAL_SECONDS = float(os.getenv("POLL_INTERVAL_SECONDS", "5"))
 
 cached_access_token: Optional[str] = None
