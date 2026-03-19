@@ -6,6 +6,8 @@
 
 Спасибо Telegram боту [@playinnowbot](https://t.me/playinnowbot) за возможность скачивать треки.
 
+Сейчас данный бот больше не работает, и поэтому весь spot2gram теперь построен на его зеркале: [@gigamusicrobot](https://t.me/gigamusicrobot)
+
 ![demo image](.github/images/demo.png)
 ![demo image 2](.github/images/demo2.png)
 
