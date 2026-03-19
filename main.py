@@ -96,7 +96,7 @@ async def fetch_currently_playing(access_token: str) -> Optional[Tuple[str, str]
 
 async def send_inline_top_result_and_get_message(app: Client, query_text: str):
     try:
-        results = await app.get_inline_bot_results("@playinnowbot", query_text)
+        results = await app.get_inline_bot_results("@gigamusicrobot", query_text)
         if not results or not results.results:
             print(f"[tg] no inline results for: {query_text}")
             return None
@@ -189,7 +189,6 @@ async def main():
 
                 now_playing = await fetch_currently_playing(access_token)
                 if not now_playing:
-                    # Nothing playing -> cleanup if needed
                     if last_spotify_track_id is not None:
                         await unsave_music(app, last_saved_input_document)
                         last_spotify_track_id = None
