@@ -27,7 +27,7 @@
 5. Скопируйте `Client ID` и `Client Secret` и укажите их в `.env`
 
 ## Настройка Telegram
-1. Запустите Telegram-бота [@playinnowbot](https://t.me/playinnowbot)
+1. Запустите Telegram-бота [@gigamusicrobot](https://t.me/gigamusicrobot)
 2. Привяжите аккаунт Spotify в боте
 3. Создайте новый Telegram-канал, в котором будут треки
 4. Получите ID канала и укажите его в `.env` (обычно ID начинается с `-100`. Если у вас без `-100`, добавьте префикс `-100` сами)
