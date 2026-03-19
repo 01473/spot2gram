@@ -27,7 +27,7 @@ NOW as @playinnowbot is closed, whole project is running on the clone: [@gigamus
 5. Copy your `Client ID` and `Client Secret` and fill them in .env
 
 ## Telegram Setup
-1. Start [@playinnowbot](https://t.me/playinnowbot) Telegram bot
+1.  Start [@gigamusicrobot](https://t.me/gigamusicrobot) Telegram bot
 2. Link Spotify account in the bot
 3. Create new Telegram Channel that will contain tracks
 4. Get ID of telegram channel and fill it in .env (usually ID should start with -100, if ID doesn't - add -100 yourself)
