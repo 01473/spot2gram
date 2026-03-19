@@ -18,6 +18,7 @@ NOW as @playinnowbot is closed, whole project is running on the clone: [@gigamus
 
 ## Requirements
 - [Python](https://www.python.org/downloads/) 3.10+
+- Spotify Premium [(check here)](https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security)
 
 ## Create a Spotify App
 1. Open the Spotify Developer Dashboard (`https://developer.spotify.com/dashboard`)
@@ -36,7 +37,7 @@ NOW as @playinnowbot is closed, whole project is running on the clone: [@gigamus
 
 ### Clone and enter the project
 ```bash
-git clone https://github.com/vedma1337/spot2gram.git
+git clone https://github.com/01473/spot2gram.git
 cd spot2gram
 ```
 
