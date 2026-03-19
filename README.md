@@ -6,6 +6,8 @@ Sync your currently playing Spotify track to Telegram music status. Uses a Teleg
 
 Thanks to [@playinnowbot](https://t.me/playinnowbot) Telegram bot for the opportunity to get music from it
 
+NOW as @playinnowbot is closed, whole project is running on the clone: [@gigamusicrobot](https://t.me/gigamusicrobot)
+
 ![demo image](.github/images/demo.png)
 ![demo image 2](.github/images/demo2.png)
 
