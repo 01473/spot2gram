@@ -18,6 +18,7 @@
 
 ## Требования
 - [Python](https://www.python.org/downloads/) 3.10+
+- Spotify Premium [(смотрите это)](https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security)
 
 ## Создание приложения в Spotify
 1. Откройте Spotify Developer Dashboard (`https://developer.spotify.com/dashboard`)
@@ -36,7 +37,7 @@
 
 Клонируйте репозиторий и перейдите в папку проекта:
 ```bash
-git clone https://github.com/vedma1337/spot2gram.git
+git clone https://github.com/01473/spot2gram.git
 cd spot2gram
 ```
 
