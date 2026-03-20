@@ -8,6 +8,9 @@ Thanks to [@playinnowbot](https://t.me/playinnowbot) Telegram bot for the opport
 
 NOW as @playinnowbot is closed, whole project is running on the clone: [@gigamusicrobot](https://t.me/gigamusicrobot)
 
+> [!NOTE]
+> Users in Russia may experience slow login times. Tunnel VPN is recommended.
+
 ![demo image](.github/images/demo.png)
 ![demo image 2](.github/images/demo2.png)
 
@@ -82,7 +85,7 @@ SPOTIFY_CLIENT_ID=your_spotify_client_id
 SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
 SPOTIFY_REFRESH_TOKEN=  # should be filled after running spotify_auth.py
 SPOTIFY_REDIRECT_URI=http://127.0.0.1:8888/callback
-CHANNEL_ID=your_telegram_channel_id
+CHANNEL_ID=your_telegram_channel_id # prepend -100 to ID if missing
 POLL_INTERVAL_SECONDS=5
 ```
 
