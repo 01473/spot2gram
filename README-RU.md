@@ -8,6 +8,9 @@
 
 Сейчас данный бот больше не работает, и поэтому весь spot2gram теперь построен на его зеркале: [@gigamusicrobot](https://t.me/gigamusicrobot)
 
+> [!NOTE]
+> Авторизация в России может быть медленной (или вообще может не быть), рекомендуется туннельный VPN
+
 ![demo image](.github/images/demo.png)
 ![demo image 2](.github/images/demo2.png)
 
@@ -82,7 +85,7 @@ SPOTIFY_CLIENT_ID=your_spotify_client_id
 SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
 SPOTIFY_REFRESH_TOKEN=  # заполните после запуска spotify_auth.py
 SPOTIFY_REDIRECT_URI=http://127.0.0.1:8888/callback
-CHANNEL_ID=your_telegram_channel_id
+CHANNEL_ID=your_telegram_channel_id # добавьте -100 в начале, если нет
 POLL_INTERVAL_SECONDS=5
 ```
 
